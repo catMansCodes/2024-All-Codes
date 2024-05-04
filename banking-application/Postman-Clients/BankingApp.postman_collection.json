@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "deaee3da-ce4d-4d50-8958-940d17bbccd5",
+		"name": "BankingApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16075219"
+	},
+	"item": [
+		{
+			"name": "CreateAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountHolderName\":\"CatMan\",\r\n    \"balance\":10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{env}}/api/accounts/create",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fund Transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromAccountId\":1,\r\n    \"toAccountId\":7,\r\n    \"amount\":3000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{env}}/api/accounts/transfer",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{env}}/api/accounts/6",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaction History By Account Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{env}}/api/accounts/1/transactions",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						"1",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{env}}/api/accounts/6",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{env}}/api/accounts",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit Amount",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":352500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{env}}/api/accounts/1/deposit",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						"1",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Withdraw Balance",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"balance\":7000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{env}}/api/accounts/7/withdraw",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"accounts",
+						"7",
+						"withdraw"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
