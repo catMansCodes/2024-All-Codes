@@ -11,3 +11,5 @@ API DOcumentation using OpenAPI 3
 Hibernate- Many to One relation
 
 Java 17 - Record Class 
+
+API Documentation URL: http://localhost:8080/swagger-ui/index.html#/
