@@ -82,6 +82,6 @@ STEP 5: READ THE EVENTS
 
 <br/>
 
-1. Demo app to explore apache kafka & Key terminology.
+1. Demo app to explore apache kafka & Key terminology. : spring-boot-kafka-app
 2. Real world App
 3. Event Drivern Microservers using kafka
