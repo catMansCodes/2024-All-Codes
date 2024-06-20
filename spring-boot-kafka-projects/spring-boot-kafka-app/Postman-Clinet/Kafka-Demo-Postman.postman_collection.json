@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "d34e843b-f6d2-4928-b264-5f6a2d485f1f",
+		"name": "Kafka-Demo-Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16075219"
+	},
+	"item": [
+		{
+			"name": "Kafka-Producer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 103,\r\n    \"firstName\": \"cortana\",\r\n    \"lastName\": \"AI system\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{env}}/api/v1/kafka/publish",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kafka",
+						"publish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kafka-Producer-String",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{env}}/api/v1/kafka/publish?message=Java kafka message",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"kafka",
+						"publish"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "Java kafka message"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
