@@ -2,6 +2,11 @@
 
 Tectnology: Java 17, Spring boot 3, apache kafka
 
+<h3>1. Demo app to explore apache kafka & Key terminology. : spring-boot-kafka-app </h3>
+<h3>2. Real world App : springboot-kafka-real-world-project</h3>
+<h3>3. Event Drivern Microservers using kafka </h3>
+
+<br>
 
 Q.1 What is Apache Kafka & what are main terminology for the same?
 
@@ -80,8 +85,5 @@ STEP 5: READ THE EVENTS
 	Catmanscode demo
 
 
-<br/>
 
-1. Demo app to explore apache kafka & Key terminology. : spring-boot-kafka-app
-2. Real world App
-3. Event Drivern Microservers using kafka
+
